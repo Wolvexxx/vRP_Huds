@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: #000; */
+    font-family: 'Montserrat', sans-serif;
+}
+* {
+    user-select: none;
+    box-sizing: border-box;
+}
+.hud {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    width: 200px;
+    height: 90px;
+}
+.hud .item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.hud .item .line {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.09);
+    
+}
+.hud .item .line1 {
+    left: 70px;
+}
+.hud .item .line2 {
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.hud .item .line3 {
+    right: 70px;
+}
+.hud .shield {
+    height: 5px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.311);
+}
+.heart {
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid rgba(120, 255, 165, 0.671);
+}
+.hud .item img {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.hud .item .fill {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(120, 255, 165, 0.671);;
+}
+.bar {
+    width: 85%;
+    height: 100%;
+    background: #9b9b9b;
+}
+
+.fillShield {
+    position: relative;
+    background-color: rgba(120, 255, 165, 0.671)  !important;
+    box-shadow: 0 0 0.1rem #fff, inset 0 0 0.1rem #fff, 0 0 1rem #74DDE9, inset 0 0 1rem #e2235c
+}
+.fillShield::after {
+    content: '';
+    height: 10px;
+    width: 3px;
+    position: absolute;
+    right: 0;
+    background-color: rgba(120, 255, 165, 0.671) ;
+    box-shadow: 0 0 0.1rem #fff, inset 0 0 0.1rem #fff, 0 0 1rem #74DDE9, inset 0 0 1rem #e2235c
+}
+
+
+
+.colete{
+    width: 100%;
+    height: 30px;
+    float: left;
+    margin-bottom: 10px;
+    border: 1px solid rgba(120, 255, 165, 0.671);
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+.icon{
+    width: 15px;
+    height: 15px;
+    background-image: url(colete.svg);
+    background-size: 100% 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+#displayColete{
+    width: 158px;
+    height: 16px;
+    background: #ffffff80;
+
+}
+#displayColete span{
+    display: block;
+    height: 100%;
+    width: 30%;
+    background: #23a2f7;
+}
+
+
+#horas{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+}
+
+#horas span{
+    color: #fff;
+    font-size: 16px;
+}
+
+
+#radio{
+    width: 20px;
+    height: 30px;
+    position: relative;
+    right: 23px;
+    bottom: 54px;
+    transform: rotate(180deg);
+}
+
+
+.voice{
+    width: 4px;
+    height: 100%;
+    background: #23a2f7;
+    float: right;
+    margin-right: 2px;
+}
+
+
+#sussurando{
+    height: 35%;
+}
+
+#normal{
+    height: 60%;
+}
+
+#frequencia{
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+    position: relative;
+    right: 140px;
+    bottom: 76px;
+    color: #ffffff80;
+    line-height: 12px;
+}
+
+#frequencia span{
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+
+#velocimetro{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    color: rgba(120, 255, 165, 0.671);
+    right: 30px;
+    bottom: 115px;
+}
+
+#topoVelo{
+    width: 100%;
+    height: 30px;
+}
+
+#rua{
+    width: 100%;
+    height: 30px;
+    font-size: 12px;    
+    text-align: center;
+    color: rgba(120, 255, 165, 0.671);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+#velocidade{
+    width: 85px;
+    height: 30px;
+    float: left;
+    color: rgba(120, 255, 165, 0.671);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#velocidade span{
+    color: rgba(120, 255, 165, 0.671);
+    margin-left: 5px;
+}
+#cinto{
+    width: 30px;
+    height: 30px;
+    background-image: url(https://cdn.discordapp.com/attachments/708215158606135306/793868634786365480/cinto-de-seguranca.png);
+    background-size: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgba(120, 255, 165, 0.671);
+    float: left;
+    animation: cinto 2s linear infinite;
+}
+
+#gasolina{
+    width: 85px;
+    height: 30px;
+    float: left;
+    color:rgba(120, 255, 165, 0.671);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+#gasolina span{
+    color: rgba(120, 255, 165, 0.671);
+    margin-left: 5px;
+}
+
+
+@keyframes cinto{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
